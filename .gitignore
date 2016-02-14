@@ -1,3 +1,4 @@
+/.idea
 *.class
 *.log
 
@@ -8,6 +9,5 @@
 .settings
 
 *.iml
-.idea/
-.history/
+
 target/
