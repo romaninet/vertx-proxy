@@ -7,6 +7,7 @@ import io.vertx.example.web.proxy.filter.GenericScriptFilter;
 import io.vertx.example.web.proxy.repository.KeysRepository;
 import io.vertx.ext.unit.junit.VertxUnitRunner;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -49,6 +50,7 @@ public class GenericScriptServiceFilterTest {
     }
 
     @Test
+    @Ignore
     public void testFilterTrue() throws Exception {
         HttpServerRequest request = Mockito.mock(HttpServerRequest.class);
         when(request.uri()).thenReturn("/service1/product1:#");
@@ -63,6 +65,7 @@ public class GenericScriptServiceFilterTest {
     }
 
     @Test
+    @Ignore
     public void testFilterFalse() throws Exception {
         HttpServerRequest request = Mockito.mock(HttpServerRequest.class);
         when(request.uri()).thenReturn("/service3/product1:#");

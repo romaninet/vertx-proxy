@@ -1,4 +1,6 @@
-target/
+*.class
+*.log
+
 .DS_Store
 
 .classpath
@@ -6,4 +8,6 @@ target/
 .settings
 
 *.iml
-.idea
+.idea/
+.history/
+target/
